@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stylish Cute AI — Remote Login</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="card">
+    <h1>Stylish Cute AI — Remote</h1>
+    <p class="subtitle">
+      Sign in with your remote-control account to connect to your desktop.
+    </p>
+
+    <form id="login-form">
+      <input type="email" id="email" placeholder="Email" required autocomplete="username" autofocus />
+      <input type="password" id="password" placeholder="Password" required autocomplete="current-password" />
+      <button type="submit" id="login-btn">Connect</button>
+    </form>
+
+    <div class="error" id="error-box"></div>
+  </div>
+
+  <!--
+    IMPORTANT: this page uses ES modules (type="module" below), which
+    browsers refuse to load over a plain file:// URL for security
+    reasons. If login silently does nothing when clicked, the most
+    likely cause is opening this file directly instead of serving it.
+
+    Serve it locally with either:
+      npx serve .
+      python3 -m http.server 8000
+    then open the http://localhost address it prints — don't double-click
+    index.html in your file explorer.
+  -->
+  <script type="module" src="login.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stylish Cute AI — Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="card dashboard">
+    <div class="top-bar">
+      <div>
+        <h1 style="margin-bottom:2px;">Remote Control</h1>
+        <div class="user-email" id="user-email"></div>
+      </div>
+      <button class="logout-btn" id="logout-btn">Log out</button>
+    </div>
+
+    <div class="grid">
+      <button data-cmd="open chrome">Open Chrome</button>
+      <button data-cmd="open notepad">Open Notepad</button>
+      <button data-cmd="open vscode">Open VS Code</button>
+      <button data-cmd="take a screenshot">Screenshot</button>
+      <button data-cmd="volume up">Volume Up</button>
+      <button data-cmd="volume down">Volume Down</button>
+      <button data-cmd="mute">Mute</button>
+      <button data-cmd="lock the pc">Lock PC</button>
+      <button data-cmd="system status">System Status</button>
+      <button data-cmd="what time is it">Time</button>
+    </div>
+
+    <form id="custom-form">
+      <input type="text" id="custom-cmd" placeholder="Type a custom command…" />
+      <button type="submit">Send Command</button>
+    </form>
+
+    <div class="log" id="log"></div>
+  </div>
+
+  <script type="module" src="dashboard.js"></script>
+</body>
+</html>
