@@ -1,0 +1,15 @@
+# Real secrets — never commit
+.env
+remote-web/firebase-config.js
+desktop/serviceAccountKey.json
+*.json.key
+
+# Python
+__pycache__/
+*.pyc
+venv/
+.venv/
+
+# OS junk
+.DS_Store
+Thumbs.db
